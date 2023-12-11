@@ -29,11 +29,11 @@ public class SearchClientImpl implements SearchClient {
     }
 
     @Override
-    public List<String> getBlogByKeywords(List<String> keywords) {
+    public List<String> getBlogByKeyword(String keyword) {
         var httpHeaders = new HttpHeaders();
         httpHeaders.set("Authorization", "KakaoAK " + key);
         var queryString = "";
-        queryString = "?query=" + URLEncoder.encode(keywords.get(0), StandardCharsets.UTF_8);
+        queryString = "?query=" + URLEncoder.encode(keyword, StandardCharsets.UTF_8);
 
         var entity = new HttpEntity<>(httpHeaders);
 

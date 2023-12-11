@@ -4,5 +4,5 @@ import java.util.List;
 
 public interface SearchService {
 
-    List<String> getBlogsByKeywords(List<String> keywords);
+    List<String> getBlogsByKeyword(String keywords);
 }
