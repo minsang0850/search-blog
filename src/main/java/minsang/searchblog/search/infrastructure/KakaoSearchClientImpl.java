@@ -1,8 +1,9 @@
-package minsang.searchblog.search.client;
+package minsang.searchblog.search.infrastructure;
 
-import minsang.searchblog.search.dto.KakaoBlogSearchRequestParam;
-import minsang.searchblog.search.dto.KakaoBlogSearchResponse;
-import minsang.searchblog.search.dto.KakaoDocument;
+import minsang.searchblog.search.infrastructure.SearchClient;
+import minsang.searchblog.search.presentation.dto.KakaoBlogSearchRequestParam;
+import minsang.searchblog.search.presentation.dto.KakaoBlogSearchResponse;
+import minsang.searchblog.search.presentation.dto.KakaoDocument;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.http.HttpEntity;
 import org.springframework.http.HttpHeaders;

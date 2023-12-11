@@ -1,4 +1,4 @@
-package minsang.searchblog.common.config;
+package minsang.searchblog.search.infrastructure.config;
 
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;

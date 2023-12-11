@@ -1,10 +1,10 @@
-package minsang.searchblog.search.controller;
+package minsang.searchblog.search.presentation.controller;
 
 import jakarta.servlet.http.HttpServletRequest;
 import lombok.RequiredArgsConstructor;
-import minsang.searchblog.search.dto.BlogSearchRequestParam;
-import minsang.searchblog.search.entity.SearchHistory;
-import minsang.searchblog.search.service.SearchService;
+import minsang.searchblog.search.presentation.dto.BlogSearchRequestParam;
+import minsang.searchblog.search.domain.model.SearchHistory;
+import minsang.searchblog.search.domain.service.SearchService;
 import org.apache.commons.lang3.StringUtils;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RestController;

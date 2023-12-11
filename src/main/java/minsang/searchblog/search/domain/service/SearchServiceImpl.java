@@ -1,11 +1,11 @@
-package minsang.searchblog.search.service;
+package minsang.searchblog.search.domain.service;
 
 import lombok.RequiredArgsConstructor;
-import minsang.searchblog.search.client.SearchClient;
-import minsang.searchblog.search.dto.BlogSearchRequestParam;
-import minsang.searchblog.search.dto.KakaoBlogSearchRequestParam;
-import minsang.searchblog.search.entity.SearchHistory;
-import minsang.searchblog.search.repository.SearchHistoryRepository;
+import minsang.searchblog.search.infrastructure.SearchClient;
+import minsang.searchblog.search.presentation.dto.BlogSearchRequestParam;
+import minsang.searchblog.search.presentation.dto.KakaoBlogSearchRequestParam;
+import minsang.searchblog.search.domain.model.SearchHistory;
+import minsang.searchblog.search.domain.repository.SearchHistoryRepository;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
 
@@ -14,7 +14,7 @@ import java.util.List;
 
 @RequiredArgsConstructor
 @Service
-public class SearchServiceImpl implements SearchService{
+public class SearchServiceImpl implements SearchService {
 
     private final SearchClient searchClient;
     private final SearchHistoryRepository searchHistoryRepository;

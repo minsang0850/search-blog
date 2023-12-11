@@ -1,4 +1,4 @@
-package minsang.searchblog.search.dto;
+package minsang.searchblog.search.presentation.dto;
 
 import java.util.List;
 

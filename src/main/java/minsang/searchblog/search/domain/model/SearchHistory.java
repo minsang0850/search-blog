@@ -1,4 +1,4 @@
-package minsang.searchblog.search.entity;
+package minsang.searchblog.search.domain.model;
 
 import jakarta.persistence.Entity;
 import jakarta.persistence.GeneratedValue;

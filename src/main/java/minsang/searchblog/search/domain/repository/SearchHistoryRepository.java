@@ -1,6 +1,6 @@
-package minsang.searchblog.search.repository;
+package minsang.searchblog.search.domain.repository;
 
-import minsang.searchblog.search.entity.SearchHistory;
+import minsang.searchblog.search.domain.model.SearchHistory;
 import org.springframework.data.jpa.repository.JpaRepository;
 
 import java.util.List;
