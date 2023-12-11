@@ -1,6 +1,7 @@
 package minsang.searchblog.search.controller;
 
 import lombok.RequiredArgsConstructor;
+import minsang.searchblog.search.dto.BlogSearchRequestParam;
 import minsang.searchblog.search.service.SearchService;
 import org.apache.commons.lang3.StringUtils;
 import org.springframework.util.CollectionUtils;
@@ -18,10 +19,10 @@ public class SearchController {
     private final SearchService searchService;
 
     @GetMapping("/search/blog")
-    public List<String> getBlogs(@RequestParam(required = false, value = "keyword") String keyword){
-        if(StringUtils.isEmpty(keyword)){
+    public List<String> getBlogs(BlogSearchRequestParam param){
+        if(StringUtils.isEmpty(param.getQuery())){
             return Collections.emptyList();
         }
-        return searchService.getBlogsByKeyword(keyword);
+        return searchService.getBlogsByKeyword(param);
     }
 }
